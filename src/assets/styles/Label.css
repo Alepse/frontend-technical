@@ -1,0 +1,20 @@
+.label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.label-required {
+  color: var(--color-error);
+  margin-left: 4px;
+}
+
+.form-field:focus-within .label {
+  color: var(--color-text-main);
+  text-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
